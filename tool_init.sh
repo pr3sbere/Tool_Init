@@ -122,6 +122,7 @@ EOF
 # 6. Configure uv shell environment
 echo -e "${BLUE}[*] Configuring uv shell environment...${NC}"
 uv tool update-shell
+echo -e "${YELLOW}[*] Run the following command if you encounter issues loading the tools: uv tool update-shell"${NC}"
 
 # 7. Final Notification and Reload Instructions
 echo -e "\n${GREEN}[+] Setup Complete!${NC}"
