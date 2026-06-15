@@ -11,7 +11,7 @@ echo -e "${BLUE}[*] Starting Setup for Ubuntu/Kali...${NC}"
 # 1. Install System Dependencies
 echo -e "${BLUE}[*] Updating system and installing base dependencies...${NC}"
 sudo apt-get update
-sudo apt-get install -y git python3-pip build-essential libssl-dev libffi-dev libbz2-dev libreadline-dev libsqlite3-dev curl
+sudo apt-get install -y git python3-pip build-essential libssl-dev libffi-dev libbz2-dev libreadline-dev libsqlite3-dev  gcc clang libclang-dev libgssapi-krb5-2 libkrb5-dev libsasl2-modules-gssapi-mit curl
 
 # 2. Install uv if not present
 if ! command -v uv &> /dev/null; then
